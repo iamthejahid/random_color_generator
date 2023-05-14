@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:random_color_generator/core/font_size.dart';
 import 'package:random_color_generator/presentation/color_page/multi_color_show_case_page.dart';
 // import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -22,28 +23,28 @@ class ColorShowCasePage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text(
+                    Text(
                       "Hello there",
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: FONT_SIZE,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
                     ),
                     MaterialButton(
                       color: Colors.red,
-                      child: const Row(
+                      child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
                             "view the multi color show case",
                             style: TextStyle(
-                              fontSize: 18,
+                              fontSize: FONT_SIZE,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),
                           ),
-                          Icon(
+                          const Icon(
                             Icons.arrow_forward,
                             color: Colors.white,
                           )
