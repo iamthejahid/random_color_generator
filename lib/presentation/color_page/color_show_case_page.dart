@@ -23,7 +23,7 @@ class ColorShowCasePage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Hello there",
                       style: TextStyle(
                         fontSize: FONT_SIZE,
@@ -33,7 +33,7 @@ class ColorShowCasePage extends StatelessWidget {
                     ),
                     MaterialButton(
                       color: Colors.red,
-                      child: Row(
+                      child: const Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
@@ -44,7 +44,7 @@ class ColorShowCasePage extends StatelessWidget {
                               color: Colors.white,
                             ),
                           ),
-                          const Icon(
+                          Icon(
                             Icons.arrow_forward,
                             color: Colors.white,
                           )
