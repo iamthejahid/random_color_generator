@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:random_color_generator/core/font_size.dart';
 // import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 /// The Multi Color Showing Page.
@@ -17,7 +18,7 @@ class MultiColorShowCasePage extends StatelessWidget {
         height: double.infinity,
         child: Wrap(
           // Vertical spacing between lines
-          children: List.generate(9, (index) {
+          children: List.generate(GRIDS_AMOUNT, (index) {
             return Container(
               margin: const EdgeInsets.all(2),
               width: width,
