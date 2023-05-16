@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:random_color_generator/application/color_show_notifier/color_show_notifier_state.dart';
-import 'package:random_color_generator/core/font_size.dart';
+import 'package:random_color_generator/core/values.dart';
 import 'package:random_color_generator/domain/random_color_generator_domain.dart';
 
 /// The `ColorShowNotifier` class is a state notifier responsible for managing

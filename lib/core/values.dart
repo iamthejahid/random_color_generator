@@ -11,3 +11,6 @@ const int POSSIBILITY_MAKER_NUMBER_FOR_BG = 9;
 
 /// Possibility Maker number for Button
 const int POSSIBILITY_MAKER_NUMBER_FOR_BUTTON = 7;
+
+/// Radius value of button
+const double BUTTON_RADIUS = 10.0;

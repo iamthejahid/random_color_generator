@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:random_color_generator/core/dependency_injector_contain.dart';
-import 'package:random_color_generator/core/font_size.dart';
+import 'package:random_color_generator/core/values.dart';
 import 'package:random_color_generator/presentation/color_page/multi_color_show_case_page.dart';
 
 /// The Single Color Showing Page.
@@ -35,9 +35,15 @@ class ColorShowCasePage extends ConsumerWidget {
                   ),
                 ),
                 MaterialButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(
+                      BUTTON_RADIUS,
+                    ),
+                  ),
                   color: currentSate.buttonColor,
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
                         "view the multi color show case",

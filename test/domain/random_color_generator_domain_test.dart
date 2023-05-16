@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:random_color_generator/core/font_size.dart';
+import 'package:random_color_generator/core/values.dart';
 import 'package:random_color_generator/domain/random_color_generator_domain.dart';
 import 'package:random_color_generator/infrastructur/random_color_generator_i.dart';
 

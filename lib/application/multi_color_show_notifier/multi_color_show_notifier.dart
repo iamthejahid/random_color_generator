@@ -2,7 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:random_color_generator/application/multi_color_show_notifier/multi_color_show_notifier_state.dart';
-import 'package:random_color_generator/core/font_size.dart';
+import 'package:random_color_generator/core/values.dart';
 import 'package:random_color_generator/domain/random_color_generator_domain.dart';
 
 /// The [MultiColorShowNotifier] class is a state notifier
