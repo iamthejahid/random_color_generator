@@ -2,6 +2,8 @@ import 'package:get_it/get_it.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:random_color_generator/application/color_show_notifier/color_show_notifier.dart';
 import 'package:random_color_generator/application/color_show_notifier/color_show_notifier_state.dart';
+import 'package:random_color_generator/application/multi_color_show_notifier/multi_color_show_notifier.dart';
+import 'package:random_color_generator/application/multi_color_show_notifier/multi_color_show_notifier_state.dart';
 import 'package:random_color_generator/domain/random_color_generator_domain.dart';
 import 'package:random_color_generator/infrastructur/random_color_generator_i.dart';
 
@@ -27,4 +29,13 @@ Future<void> init() async {
 final colorStateNotifierProvider =
     StateNotifierProvider<ColorShowNotifier, ColorShowNotifierState>((ref) {
   return ColorShowNotifier(randomColorGeneratorDomain: sl());
+});
+
+/// The `ColorStateNotifierProvider` is a provider that creates
+/// a state notifier instance of `ColorShowNotifier` and provides
+/// it to its descendants.
+final multiColorStateNotifierProvider =
+    StateNotifierProvider<MultiColorShowNotifier, MultiColorShowNotifierState>(
+        (ref) {
+  return MultiColorShowNotifier(randomColorGeneratorDomain: sl());
 });
