@@ -44,12 +44,14 @@ void main() async {
   testWidgets('MultiColorShowCasePage renders correctly',
       (WidgetTester tester) async {
     await tester.pumpWidget(
-      MaterialApp(
-        home: MultiColorShowCasePage(),
+      ProviderScope(
+        child: MaterialApp(
+          home: MultiColorShowCasePage(),
+        ),
       ),
     );
 
     // Verify that the page renders correctly
-    expect(find.byType(Container), findsNWidgets(GRIDS_AMOUNT));
+    expect(find.byType(Container), findsNWidgets(GRIDS_AMOUNT + 1));
   });
 }
