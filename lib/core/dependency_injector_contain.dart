@@ -1,5 +1,5 @@
 import 'package:get_it/get_it.dart';
-import 'package:random_color_generator/domain/random_color_generator_dom.dart';
+import 'package:random_color_generator/domain/random_color_generator_domain.dart';
 import 'package:random_color_generator/infrastructur/random_color_generator_i.dart';
 
 ///This line of code initializes an instance of the GetIt

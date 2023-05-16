@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'dart:ui';
-import 'package:random_color_generator/domain/random_color_generator_dom.dart';
+import 'package:random_color_generator/domain/random_color_generator_domain.dart';
 
 /// The `RandomColorDomain` class is a concrete implementation of the
 ///
@@ -21,6 +21,7 @@ class RandomColorGeneratorI extends RandomColorGeneratorDomain {
     final Random random = Random(possibilityMaker);
     final int color = random.nextInt(0xFFFFFF);
     final String hexColor = color.toRadixString(16).padLeft(6, '0');
+
     return Color(int.parse('0xFF$hexColor'));
   }
 }
